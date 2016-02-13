@@ -2,9 +2,8 @@
 $( document ).ready(function() {
 
     var box = $(".box");
-    var container = $("#container");
 
-    var eases = ['easeOutQuad', 'easeOutSine', 'easeInOutElastic', 'swing'];
+    // var eases = ['easeOutQuad', 'easeOutSine', 'easeInOutElastic', 'swing'];
 
     box.on('click', function(event){
 
@@ -17,7 +16,7 @@ $( document ).ready(function() {
         el.animate({
             'margin-left': 900,
             'background-color' : 'red'
-        }, 3000, 'easeOutSine', function(){
+        }, 3000, 'easeOutSine', function oncomplete(){
             el.css({
                 'margin-left': 20
             });
