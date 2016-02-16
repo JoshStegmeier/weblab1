@@ -1,5 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: #455A64;
+}
+
 .navbar {
     background-color: #ccc;
+    min-height: 5rem;
+    font-size: 1.8rem;
 }
 ul,
 li {
@@ -12,6 +22,7 @@ li {
     display: inline-block;
     background-color: #666;
     width: 33.3%;
+    line-height: 2.7;
 }
 ul:after {
     content: "";
@@ -22,8 +33,21 @@ ul:after {
 }
 a {
     display: block;
-    background-color: darkblue;
-    color: #fff;
+    background-color: aquamarine;
+    color: deeppink;
     text-align: center;
     text-decoration: none;
+    transition: 
+        background-color .5s ease,
+        color .25s ease,
+        box-shadow .5s ease,
+        transform .5s ease;
+    box-shadow: rgba(0,0,0,0.5)
+}
+
+a:hover{
+    background-color: mediumspringgreen;
+    color: mediumorchid;
+    transform: translateY(5px) translateX(3px);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5)
 }
