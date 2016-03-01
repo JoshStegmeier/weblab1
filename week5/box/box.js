@@ -11,14 +11,15 @@ $( document ).ready(function() {
     //     alert("Congratulations! You've clicked on the box");
     // });
 
-    var el = $(this);
+        var el = $(this);
 
         el.animate({
             'margin-left': 900,
             'background-color' : 'red'
         }, 3000, 'easeOutSine', function oncomplete(){
             el.css({
-                'margin-left': 20
+                'margin-left': 20,
+                'background-color': 'white'
             });
         });
 

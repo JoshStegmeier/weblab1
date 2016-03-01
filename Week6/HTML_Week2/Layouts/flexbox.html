@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox - the new hotness</title>
+    <!--<link rel="stylesheet" href="flexbox.css" charset="utf-8">-->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: lightblue;
+        }
+        
+        .content {
+            background-color: #ccc;
+            /*flex: 1 0 auto;*/
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            display: flex;            
+        }
+        
+        .sidebar {
+            background-color: #ffffff;
+            width: 200px;
+            flex: 1 0 auto;
+        }
+        
+        .main {
+            flex-shrink: 1;
+            background-color: #efefef;
+            overflow-y: auto;
+            /*overflow-y: scroll;*/
+        }
+        
+        .ads {
+            background-color: lightpink;
+            width: 150px;
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .ad {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+        
+        .ad:first-child {
+            margin-top: 1rem;
+        }
+        
+        .ad:after {
+            content: "$";
+            display: block;
+            color: #fff;
+        }
+        
+        .footer {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        header
+    </div>
+    
+    <div class="content clearfix">
+                
+        <div class="sidebar">
+            <!--ul>li*4>a-->
+            <ul>
+                
+                <li>
+                    <a href="#">link1</a>
+                </li>
+                
+                <li>
+                    <a href="#">link2</a>
+                </li>
+                
+                <li>
+                    <a href="#">link3</a>
+                </li>
+                
+                <li>
+                    <a href="#">link4</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="main">
+            
+            <!--p*5>lorem-->
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, vel molestiae aspernatur dolorem velit labore, dolore laborum tempore reiciendis totam laboriosam, quos doloremque. Quam iure quas consequuntur placeat iusto amet.</p>
+            
+            <p>Possimus dicta voluptatem similique blanditiis tempora corrupti architecto eos incidunt provident ducimus. Sunt autem et, cumque iure adipisci consequatur harum ratione ducimus, maxime voluptates rerum rem ea, maiores facilis ut.</p>
+            
+            <p>Neque autem, similique animi. Iure nihil et deserunt nobis doloribus. Ullam id quo, officiis incidunt delectus illum, atque corporis sit, ratione suscipit esse! Consequatur, culpa laborum fugit nulla iusto velit.</p>
+            
+            <p>Quisquam velit ipsam neque ab nostrum quia? Qui eligendi rem excepturi ipsum, doloribus, eaque repellendus ratione deserunt error enim expedita, tenetur! Ratione, tempora, perferendis. Harum dolor ex velit illo provident!</p>
+            
+            <p>Ipsum reprehenderit, suscipit quis adipisci rerum laudantium, odio repellat reiciendis ab, ea temporibus unde aliquam facere error totam sint quam, fugit laboriosam maiores blanditiis autem obcaecati recusandae odit. Ea, assumenda!</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima molestias iusto, nesciunt officiis esse ullam expedita nobis laborum facilis, minus praesentium quos quidem natus harum veniam itaque illum! Cumque, nam!</p>
+            
+            <p>Non a harum quam, voluptas ipsum eius nam rerum eos vero qui velit dolorem animi tempore explicabo eum et aperiam laudantium est provident magnam beatae eveniet iure illum labore. Illum!</p>
+            
+            <p>Optio obcaecati, nulla veritatis facere magni! Totam facilis nihil minus sint ab ipsam quo soluta ipsa at sunt rerum, impedit possimus iure dolore fuga necessitatibus doloremque saepe inventore neque, pariatur.</p>
+            
+            <p>Modi nulla, qui quia. Nisi fugiat delectus libero voluptatum itaque porro suscipit, iste dolorum est non enim ipsam atque tempora vitae, magnam vero quas a et facilis aliquam tenetur earum.</p>
+            
+            <p>Repellendus repudiandae voluptatem amet quia, nulla aperiam saepe molestias explicabo temporibus dignissimos quod numquam facere minus sint culpa porro eligendi eveniet cum, sunt debitis dolores obcaecati inventore veniam ullam. Tenetur.</p>
+            
+            <p>Eum repellat dicta beatae, sapiente quod culpa odit officia ex rerum accusamus repudiandae totam quasi recusandae vitae facere quibusdam ipsum harum illo sed dolorum eaque tempore nemo voluptates natus corporis?</p>
+            
+            <p>Quia hic ducimus quidem officia sit excepturi nesciunt quis esse illo placeat corrupti temporibus id quo debitis, laudantium architecto magni. Ipsum dignissimos, illum itaque magni dolor ex odio at rerum?</p>
+            
+            <p>Harum asperiores placeat necessitatibus sint, libero consectetur, architecto ex ipsum repellendus adipisci, animi tenetur excepturi? Quibusdam obcaecati, id porro harum animi corrupti nesciunt, quo. Mollitia quo ad reiciendis similique consectetur.</p>
+        </div>
+        
+        <div class="ads">
+            <div class="ad"></div>
+            <div class="ad"></div>
+            <div class="ad"></div>
+        </div>
+        
+    </div>
+        
+    <div class="footer">   
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus, pariatur error aliquid quia fugit, id nisi officia deleniti dignissimos, temporibus cumque perferendis voluptatum! Debitis suscipit repellendus quas architecto corrupti!</p>
+        
+        <p>	&copy; Copyright</p>
+    </div>
+    
+</body>
+</html>

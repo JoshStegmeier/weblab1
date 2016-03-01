@@ -1,0 +1,50 @@
+body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+.header {
+	height: 40px;
+	background-color: #000000;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.pages {
+    height: 60px;
+	font-size: 25px;
+	font-face: .AppleSystemUIFont;
+	letter-spacing: -1.9px;
+	color: #ffffff;
+    vertical-align: middle;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.frontend {
+    height: 60px;
+	font-size: 21px;
+	font-face: OpenSans;
+	letter-spacing: -1px;
+	color: #ffffff;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.backend {
+    
+}
+
+        /*utility rules*/
+        
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+ 
+ .headertext {
+     
+ }
