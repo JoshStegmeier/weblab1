@@ -1,0 +1,33 @@
+<!-- views/pages/name.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Call the ejs include command and provide the path to the
+        partial to include.  Path is relative to this file.
+
+        the bracket & % tags are used by the EJS templating engine and
+        contain instructions for the engine to follow.
+    -->
+    <!-- Include our head.ejs file -->
+    <% include ../partials/head %>
+    <script type="text/javascript">
+        document.cookie = "username=Josh";
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Include the header of the page -->
+        <% include ../partials/header %>
+    </header>
+
+    <h1>Hello, <%= name %>!</h1>
+    <p>Your random word of the day is, <%= word %>!</p>
+
+    <footer>
+        <!-- Use EJS again to include our footer partial -->
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>

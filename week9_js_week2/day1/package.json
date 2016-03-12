@@ -1,0 +1,23 @@
+{
+  "name": "week9_js_week2",
+  "version": "1.0.0",
+  "description": "Week 9 of WebLab, Week 2 of JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weblab",
+    "js",
+    "javascript",
+    "week2",
+    "week",
+    "2"
+  ],
+  "author": "Josh Stegmeier",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
